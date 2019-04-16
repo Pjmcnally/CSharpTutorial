@@ -4,6 +4,8 @@ using System.Text;
 using static tutorialApp.Strings;
 using static tutorialApp.Numbers;
 using static tutorialApp.ControlFlow;
+using static tutorialApp.Lists;
+using static tutorialApp.Classes; 
 
 
 namespace tutorialApp
@@ -13,18 +15,27 @@ namespace tutorialApp
         static void Main()
         {
             // Strings Methods
-            HelloWorld();
-            StringProperties();
-            StringMethods();
+            //HelloWorld();
+            //StringProperties();
+            //StringMethods();
 
             // Numbers Methods
-            WorkingWithIntegers();
-            OrderPrecedence();
-            IntegerLimits();
-            WorkingWithDoubles();
-            WorkingWithDecimals();
+            //WorkingWithIntegers();
+            //OrderPrecedence();
+            //IntegerLimits();
+            //WorkingWithDoubles();
+            //WorkingWithDecimals();
 
             // ControlFlow Methods
+            //ExploreIf();
+            //ExploreLoops();
+
+            // List Methods
+            //SimpleLists();
+            //SearchSort();
+            //FibonacciList(18);
+
+            // Class Methods
         }
     }
 }
