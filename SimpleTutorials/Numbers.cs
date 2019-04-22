@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 
-namespace tutorialApp
+namespace SimpleTutorial
 {
     class Numbers
     {

@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using static tutorialApp.Strings;
-using static tutorialApp.Numbers;
-using static tutorialApp.ControlFlow;
-using static tutorialApp.Lists;
+using System.Numerics;
+using static SimpleTutorial.Strings;
+using static SimpleTutorial.Numbers;
+using static SimpleTutorial.ControlFlow;
+using static SimpleTutorial.Lists;
 
 
-namespace tutorialApp
+namespace SimpleTutorial
 {
     class Program
     {
@@ -36,8 +35,12 @@ namespace tutorialApp
 
             // Fibonacci 
             int num = 1001;
-            Console.WriteLine($"Fibonacci[{num}] = {FibonacciBigInt(num):n0}");
-            Console.WriteLine($"Fibonacci[{num}] = {FibonacciList(num):n0}");
+            BigInteger addMethod = FibonacciBigInt(num);
+            BigInteger listMethod = FibonacciList(num);
+
+            Console.WriteLine($"\nAdd Method:\nFibonacci[{num}] = {addMethod:n0}");
+            Console.WriteLine($"\nList Method:\nFibonacci[{num}] = {listMethod:n0}");
+            Console.WriteLine($"\nAdd Method result = List method result: {addMethod == listMethod}");
 
             // Class Methods
         }
