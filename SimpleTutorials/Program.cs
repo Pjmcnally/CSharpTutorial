@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 using static SimpleTutorials.Strings;
 using static SimpleTutorials.Numbers;
@@ -33,7 +33,7 @@ namespace SimpleTutorials
             //SimpleLists();
             //SearchSort();
 
-            // Fibonacci 
+            // Fibonacci
             int num = 1001;
             BigInteger addMethod = FibonacciBigInt(num);
             BigInteger listMethod = FibonacciList(num);

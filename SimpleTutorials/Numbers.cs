@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 namespace SimpleTutorials
@@ -53,7 +53,7 @@ namespace SimpleTutorials
             Console.WriteLine(a / b);
 
             Console.WriteLine($"The range of double is {double.MaxValue} to {double.MinValue}");
-            
+
             // In the code below G is the "General" number format. 99 is a precision specifier
             Console.WriteLine($"{1.0 / 3.0:G99}");  // Not infinitely repeating
             Console.WriteLine($"{.1 + .2:G99}");    // Double precision floating point

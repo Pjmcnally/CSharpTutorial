@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
@@ -49,6 +49,6 @@ namespace SimpleTutorials
             }
 
             return fibNums[num];
-        }   
+        }
     }
 }
