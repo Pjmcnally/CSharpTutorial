@@ -5,7 +5,6 @@ using static tutorialApp.Strings;
 using static tutorialApp.Numbers;
 using static tutorialApp.ControlFlow;
 using static tutorialApp.Lists;
-using static tutorialApp.Classes; 
 
 
 namespace tutorialApp
@@ -28,12 +27,17 @@ namespace tutorialApp
 
             // ControlFlow Methods
             //ExploreIf();
+            //ExploreIf();
             //ExploreLoops();
 
             // List Methods
             //SimpleLists();
             //SearchSort();
-            //FibonacciList(18);
+
+            // Fibonacci 
+            int num = 1001;
+            Console.WriteLine($"Fibonacci[{num}] = {FibonacciBigInt(num):n0}");
+            Console.WriteLine($"Fibonacci[{num}] = {FibonacciList(num):n0}");
 
             // Class Methods
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace tutorialApp
 {
@@ -39,7 +40,7 @@ namespace tutorialApp
             Console.WriteLine($"\r\nRunning method: {System.Reflection.MethodBase.GetCurrentMethod().Name}");
             int max = int.MaxValue;
             int min = int.MinValue;
-            Console.WriteLine($"The range of integers is {min} to {max}");
+            Console.WriteLine($"The range of integers is {min:n0} to {max:n0}");
 
             Console.WriteLine($"An example of overflow: {max + 3}");
         }
@@ -62,11 +63,34 @@ namespace tutorialApp
         {
             Console.WriteLine($"\r\nRunning method: {System.Reflection.MethodBase.GetCurrentMethod().Name}");
 
-            Console.WriteLine($"The range of double is {decimal.MaxValue} to {decimal.MinValue}");
+            Console.WriteLine($"The range of double is {decimal.MaxValue:n0} to {decimal.MinValue:n0}");
 
             // In the code below G is the "General" number format. 99 is a precision specifier
             Console.WriteLine($"{1.0m / 3.0m:G99}");  // Not infinitely repeating
             Console.WriteLine($"{.1m + .2m:G99}");  // These are decimal numbers
+        }
+
+        public static BigInteger FibonacciBigInt(int num)
+        {
+            BigInteger small = 0;
+            BigInteger big = 1;
+            BigInteger temp = 0;
+
+            if (num == 0)
+            {
+                big = 0;
+            }
+            else
+            {
+                for (int i = 1; i < num; i++)
+                {
+                    temp = big;
+                    big = small + big;
+                    small = temp;
+                }
+            }
+
+            return big;
         }
     }
 }

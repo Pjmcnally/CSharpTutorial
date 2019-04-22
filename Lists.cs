@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Numerics;
 
 namespace tutorialApp
 {
@@ -38,16 +39,16 @@ namespace tutorialApp
             Console.WriteLine(randNums.Contains(997));
         }
 
-        public static void FibonacciList(int num)
+        public static BigInteger FibonacciList(int num)
         {
-            var fibNums = new List<int> { 0, 1 };
+            var fibNums = new List<BigInteger> { 0, 1 };
             while (fibNums.Count() < num + 1)
             {
                 int count = fibNums.Count;
                 fibNums.Add(fibNums[count - 1] + fibNums[count - 2]);
             }
 
-            Console.WriteLine($"Fibonacci[{num}] = {fibNums[num]}");
-        }
+            return fibNums[num];
+        }   
     }
 }
