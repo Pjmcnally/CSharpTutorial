@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SimpleTutorial
+namespace SimpleTutorials
 {
     class Strings
     {

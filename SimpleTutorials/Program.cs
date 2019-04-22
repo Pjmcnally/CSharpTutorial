@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Numerics;
-using static SimpleTutorial.Strings;
-using static SimpleTutorial.Numbers;
-using static SimpleTutorial.ControlFlow;
-using static SimpleTutorial.Lists;
+using static SimpleTutorials.Strings;
+using static SimpleTutorials.Numbers;
+using static SimpleTutorials.ControlFlow;
+using static SimpleTutorials.Lists;
 
 
-namespace SimpleTutorial
+namespace SimpleTutorials
 {
     class Program
     {
