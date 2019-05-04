@@ -26,7 +26,7 @@ namespace Mod2_Lab3
             int outer;
             int inner;
 
-            for (outer = 2; outer < 10000; outer++)
+            for (outer = 2; outer < 100; outer++)
             {
                 for (inner = 2; inner <= (outer / inner); inner++)
                     if ((outer % inner) == 0) break; // if factor found, not prime
